@@ -1,0 +1,43 @@
+
+
+
+.form-container{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.form-box{
+    display: flex;
+    flex-direction: column;
+}
+.form-item{
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px 5px;
+    align-items: center;
+
+}
+.form-item input{
+    margin: 0 5px;
+}
+.form-item span{
+    color: #f00;
+}
+.form-item label{
+    margin-bottom: 0;
+}
+.form-submit button{
+    border: none;
+    outline: none;
+    background-color: #2e6da4;
+    color: #fff;
+    text-align: center;
+    padding: 5px 15px;
+    margin-left: 100px;
+}
+

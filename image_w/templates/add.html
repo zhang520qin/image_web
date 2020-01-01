@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>增加用户</title>
+</head>
+<body>
+    <div class="form-container">
+      <form class="form-box" method="post" action="/login/">
+          <h4>
+          <div class="form-item">
+              <label for="name">账号</label>
+              <input name="name" id="name" required>
+              {% if error=='用户名错误' %}
+                    <span>{{ error }}</span>
+              {% endif %}
+          </div>
+
+          <div class="form-item">
+              <label for="password">密码</label>
+              <input type="password" name="password" id="password" required>
+              {% if error=='密码错误' %}
+                    <span>{{ error }}</span>
+              {% endif %}
+          </div>
+
+
+          <div class="form-submit">
+              <button type="submit">登录</button>
+          </div>
+        </h4>
+      </form>
+    </div>
+</body>
+</html>
